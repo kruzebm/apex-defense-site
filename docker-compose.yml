@@ -1,0 +1,9 @@
+services:
+  website:
+    build:
+      context: .
+    image: apex-defense-site:latest
+    container_name: apex-defense-site-preview
+    ports:
+      - "8080:80"
+    restart: unless-stopped
